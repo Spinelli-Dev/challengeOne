@@ -6,10 +6,10 @@ let loss = prompt("Digite a quantidade de derrotas: ");
 
 let resultado = calculoRank(win, loss)
 console.log(resultado)
+let rankVitorias = " "
 
 function calculoRank(win, loss){
     return win - loss
-    console.log("Você tem: ")
 }
 
 if (resultado <= 10){
@@ -28,4 +28,4 @@ if (resultado <= 10){
     rankVitorias = "Imortal"
 }
 
-console.log(rankVitorias)
+console.log("seu rank é: " + rankVitorias)
