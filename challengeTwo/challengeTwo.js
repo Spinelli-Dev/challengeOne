@@ -5,7 +5,7 @@ let win = prompt("Digite a quantidade de vitórias: ");
 let loss = prompt("Digite a quantidade de derrotas: ");
 
 let resultado = calculoRank(win, loss)
-console.log(resultado)
+
 let rankVitorias = " "
 
 function calculoRank(win, loss){
@@ -28,4 +28,9 @@ if (resultado <= 10){
     rankVitorias = "Imortal"
 }
 
-console.log("seu rank é: " + rankVitorias)
+
+if (resultado > 0){
+    console.log(`O Herói tem o saldo de ${resultado} vitórias e está no nível de: ${rankVitorias}\n`)
+} else{
+    console.log("O Herói teve mais derrotas do que vitórias. Precisa ficar mais forte!\n")
+}
